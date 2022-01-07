@@ -1,0 +1,21 @@
+@import "config";
+
+.canvas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: crimson;
+  background-image: linear-gradient(
+    to right bottom,
+    magenta,
+    crimson,
+    yellow,
+    cyan,
+    darkblue
+  );
+  @import "triangle";
+}
