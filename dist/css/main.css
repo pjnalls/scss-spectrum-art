@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: crimson;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(magenta), color-stop(crimson), color-stop(yellow), color-stop(cyan), to(darkblue));
+  background-image: linear-gradient(to right bottom, magenta, crimson, yellow, cyan, darkblue);
+}
+
+.canvas .triangle {
+  background: #000;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#000), color-stop(#ccc), to(#fff));
+  background-image: linear-gradient(to right top, #000, #ccc, #fff);
+  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  border-bottom: 3vmin solid #000;
+  width: 40vmin;
+  height: 40vmin;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*# sourceMappingURL=main.css.map */
